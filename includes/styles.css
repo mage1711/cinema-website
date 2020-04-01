@@ -1,0 +1,39 @@
+body {
+  background-color: #1a1a1a;
+}
+h1 {
+  color: whitesmoke;
+}
+h2 {
+  color: whitesmoke;
+  font-family: cursive;
+}
+h3 {
+  color: whitesmoke;
+}
+p {
+  color: whitesmoke;
+}
+li {
+  color: whitesmoke;
+}
+
+.movieBoxContainer {
+  margin-left: 32%;
+  padding: 24px;
+  width: 37%;
+  height: 40%;
+  display: flex; /*this helps me keep the text and image in their particular positions*/
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: rgb(30, 30, 30);
+}
+.movieBoxContainer:hover {
+  background-color: rgb(35, 35, 35);
+}
+.moviePic {
+  width: 50%; /*takes half of the part*/
+}
+.movieDetails {
+  flex: 1; /*this helps me keep the text and image in their particular positions*/
+}

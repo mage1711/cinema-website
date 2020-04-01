@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  width: 99%;
+}
+input[type="text"],
+input[type="password"] {
+  width: 97%;
+  padding: 15px;
+  margin: 5px 2px;
+  display: inline-flex;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+}
+button {
+  background-color: #000000;
+  color: white;
+  padding: 15px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+  border-radius: 25px;
+}
+button:hover {
+  opacity: 0.5;
+}
+.cancelbtn {
+  background-color: firebrick;
+}
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+.just1 {
+  background: rgba(0.1, 0.1, 0.1, 0.9);
+  padding: 90px;
+  margin: 5px 350px;
+  position: relative;
+  opacity: 0.1;
+  border-radius: 25px;
+  background-image: linear-gradient(black, dimgray);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.just2 {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 2px;
+}
+body {
+  background: rgb(26, 26, 26);
+  min-height: 360px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+.just1 {
+  left: 10%;
+  top: 25%;
+  margin: 20px;
+  max-width: 300px;
+  padding: 5px;
+}
+#aaa {
+  display: none;
+  float: right;
+  border: none;
+}
+.alert {
+  padding: 20px;
+  background-color: firebrick;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  display: none;
+  border-radius: 25px;
+  background-image: linear-gradient(black, red);
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: black;
+}
+#z1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  background-position: center;
+  text-decoration: underline;
+}
+#q1 {
+  color: floralwhite;
+  text-align: center;
+}
+
+div.gallery {
+  position: relative;
+  padding: 25px;
+  margin: 10px;
+  background: rgb(29, 29, 29);
+  border-radius: 10px;
+  width: 50%;
+  height: 320px;
+  left: 25%;
+  right: 25%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.4s;
+}
+.gallery:hover {
+  transform: scale(1.1);
+}
+div.desc {
+  color: aliceblue;
+}
+div.responsive {
+  width: 99%;
+  margin: 20px;
+  padding: 5px;
+}
+div.gallery img {
+  height: 80%;
+  float: right;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+#counter {
+  color: dimgray;
+  font-size: 30px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+#counter2 {
+  color: dimgray;
+  font-size: 30px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+#counter3 {
+  color: dimgray;
+  font-size: 30px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+#counter4 {
+  color: dimgray;
+  font-size: 30px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}

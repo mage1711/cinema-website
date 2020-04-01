@@ -1,0 +1,25 @@
+{
+  "movies": [
+    {
+      "name": "Joker",
+      "description": "sdadasdas",
+      "genre": "Thriller"
+    },
+    {
+      "name": "Frozen 2",
+      "description": "sdadasdas",
+      "genre": "Animation"
+    },
+    {
+      "name": "Free guy",
+      "description": "sdadasdas",
+      "genre": "Comedy"
+    },
+
+    {
+      "name": "Black widow",
+      "description": "sdadasdas",
+      "genre": "Action"
+    }
+  ]
+}

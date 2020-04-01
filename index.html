@@ -1,1 +1,136 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="includes/home.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="movie-card">
+      <a href="">
+        <div class="movie-card-content">
+          <div class="movie-detail">
+            <header>
+              <h1>
+                Star Wars
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                voluptatum laboriosam blanditiis rerum quaerat magni cumque
+                culpa aliquam numquam similique error debitis veritatis quas ab!
+                Qui, inventore! Porro, aliquam quidem?
+              </p>
+              <button>sci-fi</button>
+            </header>
+          </div>
+          <img src="images/movie1.jpg" class="movie-image" />
+        </div>
+      </a>
+    </div>
+    <div class="slideShow">
+      <link rel="stylesheet" href="includes/slideShow.css" />
+      <section>
+        <ul class="carousel">
+          <li class="items main-pos" id="1">
+            <a href="">
+              <div class="movie-card-content">
+                <div class="movie-detail">
+                  <header>
+                    <h1>
+                      Star Wars
+                    </h1>
+                    <small>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </small>
+                    <button>sci-fi</button>
+                  </header>
+                </div>
+                <img src="images/movie1.jpg" class="movie-image" />
+              </div>
+            </a>
+          </li>
+
+          <li class="items right-pos" id="2">
+            <a href="">
+              <div class="movie-card-content">
+                <div class="movie-detail">
+                  <header>
+                    <h1>
+                      Star Wars
+                    </h1>
+                    <small>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </small>
+                    <button>sci-fi</button>
+                  </header>
+                </div>
+                <img src="images/movie1.jpg" class="movie-image" />
+              </div>
+            </a>
+          </li>
+
+          <li class="items back-pos" id="3">
+            <a href="">
+              <div class="movie-card-content">
+                <div class="movie-detail">
+                  <header>
+                    <h1>
+                      Star Wars
+                    </h1>
+                    <small>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </small>
+                    <button>sci-fi</button>
+                  </header>
+                </div>
+                <img src="images/movie1.jpg" class="movie-image" />
+              </div>
+            </a>
+          </li>
+          <li class="items left-pos" id="4">
+            <a href="">
+              <div class="movie-card-content">
+                <div class="movie-detail">
+                  <header>
+                    <h1>
+                      Star Wars
+                    </h1>
+                    <small>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </small>
+                    <button>sci-fi</button>
+                  </header>
+                </div>
+                <img src="images/movie1.jpg" class="movie-image" />
+              </div>
+            </a>
+          </li>
+        </ul>
+        <span>
+          <input type="button" value="Prev" id="prev" />
+          <input type="button" value="Next" id="next" />
+        </span>
+      </section>
+      <script src="includes/slideShow.js"></script>
+      <script>
+        $.get("data.json", function(json) {
+          $.each(json.movies, function() {
+            $("#movie").append(
+              `<option value="${this.name.toLowerCase()}">${this.name}</option>`
+            );
+          });
+        });
+      </script>
+    </div>
+  </body>
+
+  <script src="includes/navbar.js"></script>
+</html>

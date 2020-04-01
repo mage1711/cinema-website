@@ -1,0 +1,163 @@
+/*Wrapper for the whole wpage*/
+
+.MPbody {
+    background-color: rgb(38, 38, 38);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: 3;
+    font-weight: 950;
+    color: white;
+}
+
+.MoviePageWrapper {
+    margin-left: 27px;
+}
+
+
+/*Inside content (information related to movie)*/
+
+.MoviePageCont1 img {
+    width: 130px;
+    height: 190px;
+}
+
+@media screen and (min-width: 900px) {
+    .MoviePageCont1 img {
+        display: none;
+    }
+}
+
+.MoviePageIdentifiers {
+    display: flex;
+    flex-direction: column;
+}
+
+.MoviePageCont1 h1 {
+    font-size: 50px;
+    margin-left: 13px;
+    margin-top: -10px;
+}
+
+.MoviePageCont1 button {
+    font-size: 20px;
+    margin-left: 22px;
+    background-color: rgb(255, 255, 255);
+    color: rgba(38, 38, 38);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    transition-duration: 0.01s;
+    font-weight: bold;
+}
+
+.MoviePageCont1 button:hover {
+    background-color: rgba(38, 38, 38);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.01s;
+}
+
+.MoviePageCont1 th,
+td {
+    font-size: 25px;
+    margin-left: 17px;
+    text-align: left;
+}
+
+.MoviePageCont1 td {
+    text-align: right;
+    font-size: 15px;
+}
+
+.MoviePageCont1 {
+    display: flex;
+    margin-top: 100px;
+}
+
+.MoviePageCont2 {
+    font-size: 24px;
+    max-width: 1100px;
+    font-style: Italic;
+    color: rgb(158, 158, 158);
+}
+
+.MoviePageCont3 {
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: normal;
+}
+
+.MoviePageCont3 table {
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.MoviePageCont3 td,
+th {
+    text-align: left;
+}
+
+.MoviePageAlso {
+    font-size: 22px;
+    margin-top: 140px;
+}
+
+
+/*Footer for the movie page containning recomended movie list*/
+
+.MoviePageList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Poster {
+    margin: 18px;
+}
+
+.Poster a {
+    text-decoration: none;
+    color: white;
+}
+
+.Poster p:hover,
+.Poster img:hover {
+    transform: scale(1.08);
+    transition: transform .3s;
+}
+
+.Poster p {
+    margin: 13px;
+    text-align: center;
+}
+
+.popper {
+    height: 320px;
+    width: 220px;
+}
+
+
+/*popper that show the movie details through a pop up */
+
+#pop {
+    display: none;
+    width: 275px;
+    height: 225px;
+    background-color: rgb(26, 26, 26);
+    position: absolute;
+    z-index: 99999;
+    padding: 10px;
+    border: 1px solid #A2ADBC;
+    margin: 0px;
+}
+
+#pop h2 {
+    padding-bottom: 7px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: solid;
+    border-left-style: hidden;
+    border-color: b(140, 140, 140);
+    border-width: 5px 0.5px;
+    width: 120px;
+}

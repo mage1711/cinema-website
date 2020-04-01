@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="includes/reservation.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+
+
+    <title>Reservation page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+  
+
+      <div class="main-content">
+        <div class="movie-poster">
+          <div class="movie-image">
+            <img src="images/joker.jpg" alt="" class="movie-image" />
+          </div>
+          <div class="movie-info">
+            <h3>director : Lorem, ipsum.</h3>
+            <h3>
+              cast : Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptas, praesentium.
+            </h3>
+            <h3>genre : Lorem.</h3>
+          </div>
+        </div>
+
+        <div class="reservation">
+          <div class="movie-container">
+            <label> Pick a movie:</label>
+            <select id="movie"> </select>
+            <label> Pick a screening:</label>
+            <select id="screening">
+              <option value="9">9:00 am ($9)</option>
+              <option value="10">12:00 pm ($10)</option>
+              <option value="12">3:00 pm ($12)</option>
+              <option value="20">6:00 pm ($20)</option>
+              <option value="20">9:00 pm ($20)</option>
+              <option value="20">12:00 am ($20)</option>
+            </select>
+            <label> Pick a date:</label>
+            <input type="date" onkeydown="return false" id="date-picker"> </input>
+          </div>
+
+          <ul class="showcase">
+            <li>
+              <div class="seat"></div>
+              <small>N/A</small>
+            </li>
+            <li>
+              <div class="seat selected"></div>
+              <small>Selected</small>
+            </li>
+            <li>
+              <div class="seat occupied"></div>
+              <small>Occupied</small>
+            </li>
+          </ul>
+          <div class="seat-container">
+            <div class="screen"></div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+          </div>
+          <p class="text">
+            You have selected <span id="count">0</span> seats for a price of
+            <span id="total">0</span>
+          </p>
+          <button>reserve</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      $.get("includes/data.json", function(json) {
+        $.each(json.movies, function() {
+          $("#movie").append(
+            `<option value="${this.name.toLowerCase()}">${this.name}</option>`
+          );
+        });
+      });
+    </script>
+    <script>
+      
+      var today = new Date().toISOString().split('T')[0];
+$("#date-picker").attr('min', today);
+
+    </script>
+    <script src="includes/navbar.js"></script>
+    <script src="includes/reservation.js"></script>
+  </body>
+</html>
