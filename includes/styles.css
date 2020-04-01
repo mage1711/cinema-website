@@ -37,3 +37,7 @@ li {
 .movieDetails {
   flex: 1; /*this helps me keep the text and image in their particular positions*/
 }
+.movieInfoLink {
+  display: block;
+  text-decoration: none;
+}

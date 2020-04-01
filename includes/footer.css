@@ -52,7 +52,8 @@
   margin-right: 8px;
 }
 .footer-links a {
+  margin-right: 30px;
   color: white;
-
+  font-size: 1.4em;
   text-decoration: none;
 }
