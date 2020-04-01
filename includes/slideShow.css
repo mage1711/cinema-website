@@ -93,3 +93,30 @@
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388;
 }
+@media only screen and (max-width: 768px) {
+  .slideShow section {
+    width: 40em;
+    height: 20em;
+    margin: 0 auto;
+    position: relative;
+    z-index: 6;
+  }
+
+  .slideShow li {
+    width: 200px;
+    height: 200px;
+  }
+
+  .left-pos {
+    margin-left: -9em !important;
+  }
+
+  .right-pos {
+    margin-left: 9em !important;
+  }
+
+  .slideShow span {
+    left: 7em;
+    top: 15em;
+  }
+}

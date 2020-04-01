@@ -64,3 +64,23 @@ button:focus {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 768px) {
+  .movie-card {
+    height: 50vh;
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 40px;
+  }
+  .movie-detail {
+    padding: 14px;
+
+    max-width: 100%;
+    font-size: 10px;
+  }
+  .movie-detail button {
+    font-size: 10px;
+  }
+}

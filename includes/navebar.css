@@ -88,7 +88,7 @@
   position: fixed;
   cursor: pointer;
   top: 35px;
-  right: 35px;
+
   transition: all 0.5s ease-out;
 }
 .menu_btn .btn_line {
@@ -114,6 +114,8 @@
 .menu {
   position: fixed;
   top: 0;
+  left: 15px;
+
   width: 100%;
   opacity: 0.9;
   visibility: hidden;
@@ -216,4 +218,28 @@ div.menu_pic {
 ul.menu_nav.show,
 div.menu_pic.show {
   transform: translate3d(0, 0, 0, 0);
+}
+
+@media only screen and (max-width: 1300px) {
+  .logo {
+    font-size: 1rem;
+  }
+  .nav-bar-item {
+    color: #fff;
+    cursor: pointer;
+    margin: 0 1.5rem;
+    padding: 0 0.5rem;
+    z-index: 2;
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: 100;
+    text-decoration: none;
+    font-family: "Roboto";
+  }
+  .account {
+    margin-right: 20px;
+  }
+  .profile-button {
+    font-size: 8px;
+  }
 }

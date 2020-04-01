@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="includes/Branches.css" />
+
+    <title>Hitchcock Branches</title>
+  </head>
+
+  <body>
+    <button
+      onclick="BackToTop()"
+      id="myButton"
+      title="Back To The Top Of The Page"
+    >
+      Top
+    </button>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="whitebackground">
+      <h2 id="abouttitle">Welcome To Hitchcock Cinemas</h2>
+
+      <p id="intro">
+        Hitchcock aim to provide the best experince with entertainment . We try
+        our best to make people comfortable ,the way we customise our cinemas to
+        meet the expectations of our guests. Each cinema offers a wide variety
+        of content and experiences. Our aim is to offer you the ultimate cinema
+        experience, with 11 premium screen halls equipped with the latest movie
+        projection and sound technology.
+      </p>
+      <br />
+
+      <h3 id="smallTitle">Have a closer look at our branches!</h3>
+    </div>
+    <div class="branches">
+      <button
+        class="tablinks"
+        onclick="openBranch(event, 'Almaza')"
+        id="defaultOpen"
+      >
+        Almaza
+      </button>
+      <button class="tablinks" onclick="openBranch(event, 'Fifth Settlment')">
+        Fifth Settlment
+      </button>
+      <button class="tablinks" onclick="openBranch(event, '6-October')">
+        6-October
+      </button>
+      <button class="tablinks" onclick="openBranch(event, 'Zayed')">
+        Zayed
+      </button>
+    </div>
+    <div id="Almaza" class="tabcontent">
+      <h3></h3>
+      <p>
+        <br />
+      </p>
+      <h3>Check Cinema images below!</h3>
+      <img src="images/maxresdefault.jpg" style="width:70%" alt="A1" />
+      <br />
+      <br />
+      <img src="images/GOLD_DCC_1517470906.jpeg" style="width:70%" alt="A2" />
+      <br />
+      <br />
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13809.777112528514!2d31.36466!3d30.08146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe93f11694c4b7c7a!2sVOX%20Cinemas%20Almaza%20City%20Center!5e0!3m2!1sen!2seg!4v1585769935903!5m2!1sen!2seg"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+
+    <div id="Fifth Settlment" class="tabcontent">
+      <h3>Fifth Settlmen Cinema</h3>
+      <p>
+        <br />
+      </p>
+      <h3>Check Cinema images below!</h3>
+      <img
+        src="images/MAX-banner-880x440-B%20(1)_1483954471.jpg"
+        style="width:70%"
+        alt="B1"
+      />
+      <br />
+      <br />
+      <img src="images/unnamed.jpg" style="width:70%" alt="B2" />
+      <br />
+      <br />
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13818.305121640467!2d31.4950277!3d30.0203208!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9f886adcffbb941!2sPoint%2090%20Cinema!5e0!3m2!1sen!2seg!4v1585770158037!5m2!1sen!2seg"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+
+    <div id="6-October" class="tabcontent">
+      <h3>Zayed cinema</h3>
+      <p>
+        <br />
+      </p>
+      <h3>Check cienma images below!</h3>
+      <img
+        src="images/MAX-banner-880x440-C_1483954482.jpg"
+        style="width:70%"
+        alt="C1"
+      />
+      <br />
+      <br />
+      <img src="images/GalaxyCinema01.jpg" style="width:70%" alt="C2" />
+      <br />
+      <br />
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13817.366711191848!2d31.013452!3d30.027054!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa828fea655e33aa8!2sIMAX%C2%AE%203D%20Theatres!5e0!3m2!1sen!2seg!4v1585770311193!5m2!1sen!2seg"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+
+    <div id="Zayed" class="tabcontent">
+      <h3>Zayed cinema</h3>
+      <p>
+        <br />
+      </p>
+      <h3>Check cienma images below!</h3>
+      <img src="images/images%20(1).jpg" style="width:70%" alt="D1" />
+      <br />
+      <br />
+      <img
+        src="images/MAX-banner-880x440-D_1497452715.jpg"
+        style="width:70%"
+        alt="D2"
+      />
+      <br />
+      <br />
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6908.679801280313!2d31.013889000000002!3d30.027105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d871f3c2b02f918!2sAmericana%20Plaza%20Zayed!5e0!3m2!1sen!2sus!4v1585770270858!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+    <script src="includes/branches.js"></script>
+    <script src="includes/navbarOnly.js"></script>
+  </body>
+</html>

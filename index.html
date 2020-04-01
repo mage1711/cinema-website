@@ -40,63 +40,66 @@
       <section>
         <ul class="carousel">
           <li class="items main-pos" id="1">
-            <a href="">
+            <a href="Badboysforlife.html">
               <div class="movie-card-content">
                 <div class="movie-detail">
                   <header>
                     <h1>
-                      Star Wars
+                      Bad boys for life
                     </h1>
                     <small>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </small>
-                    <button>sci-fi</button>
+                    <button>action</button>
                   </header>
                 </div>
-                <img src="images/movie1.jpg" class="movie-image" />
+                <img
+                  src="images/badboysofrlifebackground.jpg"
+                  class="movie-image"
+                />
               </div>
             </a>
           </li>
 
           <li class="items right-pos" id="2">
-            <a href="">
+            <a href="Dolittle.html">
               <div class="movie-card-content">
                 <div class="movie-detail">
                   <header>
                     <h1>
-                      Star Wars
+                      Dolittle
                     </h1>
                     <small>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </small>
-                    <button>sci-fi</button>
+                    <button>comedy</button>
                   </header>
                 </div>
-                <img src="images/movie1.jpg" class="movie-image" />
+                <img src="images/DolittleBackground.jpg" class="movie-image" />
               </div>
             </a>
           </li>
 
           <li class="items back-pos" id="3">
-            <a href="">
+            <a href="Frozen2.html">
               <div class="movie-card-content">
                 <div class="movie-detail">
                   <header>
                     <h1>
-                      Star Wars
+                      Frozen 2
                     </h1>
                     <small>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </small>
-                    <button>sci-fi</button>
+                    <button>animation</button>
                   </header>
                 </div>
-                <img src="images/movie1.jpg" class="movie-image" />
+                <img src="images/frozen2background.jpg" class="movie-image" />
               </div>
             </a>
           </li>
           <li class="items left-pos" id="4">
-            <a href="">
+            <a href="Theinvisibleman.html">
               <div class="movie-card-content">
                 <div class="movie-detail">
                   <header>
@@ -106,10 +109,13 @@
                     <small>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </small>
-                    <button>sci-fi</button>
+                    <button>thriller</button>
                   </header>
                 </div>
-                <img src="images/movie1.jpg" class="movie-image" />
+                <img
+                  src="images/theinvisiblemanbackground.jpg"
+                  class="movie-image"
+                />
               </div>
             </a>
           </li>
@@ -120,15 +126,6 @@
         </span>
       </section>
       <script src="includes/slideShow.js"></script>
-      <script>
-        $.get("data.json", function(json) {
-          $.each(json.movies, function() {
-            $("#movie").append(
-              `<option value="${this.name.toLowerCase()}">${this.name}</option>`
-            );
-          });
-        });
-      </script>
     </div>
   </body>
 
